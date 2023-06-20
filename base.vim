@@ -1,15 +1,13 @@
-set history=500
+set history=10000
 filetype plugin on
 filetype indent on
 " set autoread
 au FocusGained,BufEnter * checktime
 
 set wildmenu
-
 set wildignore=*.o,*~,*.pyc
 set wildignore+=.git\*,.hg\*,.svn\*
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-
 set ruler
 set cmdheight=1
 set hid
@@ -23,7 +21,6 @@ set lazyredraw
 set magic
 set showmatch
 set mat=2
-
 set noerrorbells
 set novisualbell
 set t_vb=
@@ -35,7 +32,6 @@ if has("gui_macvim")
 endif
 
 set foldcolumn=1
-
 
 syntax enable
 set regexpengine=0
@@ -58,8 +54,7 @@ set ffs=unix,dos,mac
 set nobackup
 set nowb
 set noswapfile
-
-
+set nocompatible
 set expandtab
 set smarttab
 set shiftwidth=4
@@ -67,14 +62,14 @@ set tabstop=4
 set lbr
 set tw=500
 
-set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
+set ai " auto indent
+set si " smart indent
+set wrap " wrap lines
 
 set switchbuf=useopen,usetab,newtab
 set stal=2
 
-" Return to last edit position when opening files (You want this!)
+" re-open to last edit position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 set laststatus=2
