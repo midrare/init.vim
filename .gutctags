@@ -1,0 +1,2 @@
+--exclude=*/.hookspace/*
+--exclude=*/plugged/*
