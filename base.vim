@@ -72,8 +72,8 @@ set stal=2
 " re-open to last edit position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+set shortmess+=I  " hide startup screen
 set laststatus=2
 
 " set undodir
 set undofile
-
