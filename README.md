@@ -5,7 +5,7 @@ My personal files for vim. **Use at your own risk.**
 $ git clone --recursive $REPO_URL ~/.vim
 
 $ cd ~/.vim
-$ git submodule update --init
+$ git submodule update --init --recursive
 ```
 
 ```vim
